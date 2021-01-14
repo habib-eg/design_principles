@@ -1,13 +1,17 @@
 <?php
 
-use App\OOP\PHP\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\MobileDialog;
-use App\OOP\PHP\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\SystemDialog;
-use App\OOP\PHP\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\WebDialog;
-use App\OOP\PHP\Relationship\Aggregation\Developer;
-use App\OOP\PHP\Relationship\Aggregation\Project;
+use App\Pattens\Creational\Builder\Builders\ComputerCSBuilder;
+use App\Pattens\Creational\Builder\Computer\Types\Computer;
+use App\Pattens\Creational\Builder\Computer\Types\ComputerCS;
+use App\Pattens\Creational\Builder\Director;
+use App\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\MobileDialog;
+use App\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\SystemDialog;
+use App\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\WebDialog;
+use App\OOP\Relationship\Aggregation\Developer;
+use App\OOP\Relationship\Aggregation\Project;
 
-use App\OOP\PHP\Relationship\Composition\House;
-use App\OOP\PHP\Relationship\Composition\Room;
+use App\OOP\Relationship\Composition\House;
+use App\OOP\Relationship\Composition\Room;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
@@ -66,10 +70,18 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 //
 //var_dump($house);
 
-$systemDialog = new SystemDialog();
-$webDialog = new WebDialog();
-$mobileDialog = new MobileDialog();
-var_dump($systemDialog->renderDialog());
-var_dump($webDialog->renderDialog());
-var_dump($mobileDialog->renderDialog());
+//$systemDialog = new SystemDialog();
+//$webDialog = new WebDialog();
+//$mobileDialog = new MobileDialog();
+//var_dump($systemDialog->renderDialog());
+//var_dump($webDialog->renderDialog());
+//var_dump($mobileDialog->renderDialog());
 
+
+
+$director =  new  Director(new ComputerCSBuilder());
+$computer =  $director->makeComputer();
+
+var_dump(
+    $computer
+);
