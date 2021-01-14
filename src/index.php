@@ -1,17 +1,12 @@
 <?php
 
-use App\Pattens\Creational\Builder\Builders\ComputerCSBuilder;
-use App\Pattens\Creational\Builder\Computer\Types\Computer;
-use App\Pattens\Creational\Builder\Computer\Types\ComputerCS;
-use App\Pattens\Creational\Builder\Director;
-use App\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\MobileDialog;
-use App\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\SystemDialog;
-use App\Pattens\Creational\FactoryMethod\DialogExample\Dialogs\WebDialog;
-use App\OOP\Relationship\Aggregation\Developer;
-use App\OOP\Relationship\Aggregation\Project;
-
-use App\OOP\Relationship\Composition\House;
-use App\OOP\Relationship\Composition\Room;
+use App\Pattens\Creational\Prototype\Employee\Address;
+use App\Pattens\Creational\Prototype\Employee\EmployeePrototype;
+use App\Pattens\Creational\Prototype\Employee\Privileges\Privileges;
+use App\Pattens\Creational\Prototype\Employee\Privileges\Types\ServerRoomPrivilege;
+use App\Pattens\Creational\Prototype\Employee\Privileges\Types\WebProjectPrivilege;
+use App\Pattens\Creational\Prototype\Employee\ProfileData;
+use App\Pattens\Creational\Prototype\Employee\Salary;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
@@ -79,9 +74,39 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 
 
-$director =  new  Director(new ComputerCSBuilder());
-$computer =  $director->makeComputer();
+//$director =  new  Director(new ComputerCSBuilder());
+//$computer =  $director->makeComputer();
+//
+//var_dump(
+//    $computer
+//);
 
-var_dump(
-    $computer
+$employee = new EmployeePrototype(
+    new ProfileData(
+        'habib',
+        19,
+        new Address(
+       31.22,
+        29.5,
+     'alazer',
+           'cairo',
+        'egypt',
+  300,
+       19888
+        ),
+        '1231654654654',
+        '123132123132132132',
+        'Habib',
+    ),
+    new Salary( 10000,23/100,300 ),
+    new Privileges(
+        [
+            new WebProjectPrivilege(),
+            new ServerRoomPrivilege()
+        ]
+    )
 );
+var_dump( $employee );
+
+$ahmed = clone $employee;
+var_dump( $ahmed );

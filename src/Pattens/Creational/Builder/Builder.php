@@ -1,13 +1,13 @@
 <?php
-namespace App\Pattens\Creational\Builder;
+namespace App\Pattens\Creational\Prototype\Employee\Builder;
 
-use App\Pattens\Creational\Builder\Computer\CoolingSystem;
-use App\Pattens\Creational\Builder\Computer\Keyboard;
-use App\Pattens\Creational\Builder\Computer\Monitor;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MotherBoard;
-use App\Pattens\Creational\Builder\Computer\Mouse;
-use App\Pattens\Creational\Builder\Computer\Types\Computer;
-use App\Pattens\Creational\Builder\Computer\UPS;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\CoolingSystem;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Keyboard;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Monitor;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MotherBoard;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Mouse;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Types\Computer;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\UPS;
 
 /**
  * Class Builder

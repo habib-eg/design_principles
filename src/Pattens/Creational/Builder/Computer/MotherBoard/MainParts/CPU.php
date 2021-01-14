@@ -1,5 +1,5 @@
 <?php
-namespace App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts;
+namespace App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts;
 
 /**
  * Class CPU

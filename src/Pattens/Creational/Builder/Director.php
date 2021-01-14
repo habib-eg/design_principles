@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Pattens\Creational\Builder;
+namespace App\Pattens\Creational\Prototype\Employee\Builder;
 
 
-use App\Pattens\Creational\Builder\Computer\Types\Computer;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Types\Computer;
 
 class Director
 {

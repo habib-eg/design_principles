@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Pattens\Creational\FactoryMethod\DialogExample\Buttons;
+namespace App\Pattens\Creational\Prototype\Employee\FactoryMethod\DialogExample\Buttons;
 
 
 class SystemButton extends Button

@@ -1,10 +1,10 @@
 <?php
-namespace App\Pattens\Creational\Builder\Computer\Types;
+namespace App\Pattens\Creational\Prototype\Employee\Builder\Computer\Types;
 
-use App\Pattens\Creational\Builder\Computer\Keyboard;
-use App\Pattens\Creational\Builder\Computer\Monitor;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MotherBoard;
-use App\Pattens\Creational\Builder\Computer\Mouse;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Keyboard;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Monitor;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MotherBoard;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Mouse;
 
 /**
  * Class Computer

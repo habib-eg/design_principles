@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Pattens\Creational\Builder\Computer;
+namespace App\Pattens\Creational\Prototype\Employee\Builder\Computer;
 
 
 class Monitor

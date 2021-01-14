@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Pattens\Creational\FactoryMethod\DialogExample\Dialogs;
+namespace App\Pattens\Creational\Prototype\Employee\FactoryMethod\DialogExample\Dialogs;
 
-use App\Pattens\Creational\FactoryMethod\DialogExample\Buttons\Button;
+use App\Pattens\Creational\Prototype\Employee\FactoryMethod\DialogExample\Buttons\Button;
 
 abstract class Dialog
 {

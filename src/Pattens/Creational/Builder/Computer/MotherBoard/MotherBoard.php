@@ -1,12 +1,12 @@
 <?php
-namespace App\Pattens\Creational\Builder\Computer\MotherBoard;
+namespace App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard;
 
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\CPU;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\Disk;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\GPU;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\NetworkCard;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\RAM;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\Sockets;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\CPU;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\Disk;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\GPU;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\NetworkCard;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\RAM;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\Sockets;
 
 /**
  * Class MotherBoard

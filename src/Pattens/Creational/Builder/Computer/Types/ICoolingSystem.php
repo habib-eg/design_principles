@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Pattens\Creational\Builder\Computer\Types;
+namespace App\Pattens\Creational\Prototype\Employee\Builder\Computer\Types;
 
 /**
  * Interface ICoolingSystem

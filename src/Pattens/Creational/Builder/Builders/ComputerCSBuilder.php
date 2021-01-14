@@ -1,26 +1,26 @@
 <?php
 
 
-namespace App\Pattens\Creational\Builder\Builders;
+namespace App\Pattens\Creational\Prototype\Employee\Builder\Builders;
 
 
-use App\Pattens\Creational\Builder\Builder;
-use App\Pattens\Creational\Builder\Computer\CoolingSystem;
-use App\Pattens\Creational\Builder\Computer\Keyboard;
-use App\Pattens\Creational\Builder\Computer\Monitor;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\CPU;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\Disk;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\GPU;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\NetworkCard;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\RAM;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MainParts\Sockets;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\MotherBoard;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\Sockets\CType;
-use App\Pattens\Creational\Builder\Computer\MotherBoard\Sockets\USB;
-use App\Pattens\Creational\Builder\Computer\Mouse;
-use App\Pattens\Creational\Builder\Computer\Types\Computer;
-use App\Pattens\Creational\Builder\Computer\Types\ComputerCS;
-use App\Pattens\Creational\Builder\Computer\UPS;
+use App\Pattens\Creational\Prototype\Employee\Builder\Builder;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\CoolingSystem;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Keyboard;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Monitor;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\CPU;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\Disk;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\GPU;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\NetworkCard;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\RAM;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MainParts\Sockets;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\MotherBoard;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\Sockets\CType;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\MotherBoard\Sockets\USB;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Mouse;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Types\Computer;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\Types\ComputerCS;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\UPS;
 
 class ComputerCSBuilder extends Builder
 {

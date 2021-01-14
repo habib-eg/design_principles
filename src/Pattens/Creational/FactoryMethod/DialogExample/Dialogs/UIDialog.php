@@ -1,13 +1,11 @@
 <?php
 
 
-namespace App\Pattens\Creational\FactoryMethod\DialogExample\Dialogs;
+namespace App\Pattens\Creational\Prototype\Employee\FactoryMethod\DialogExample\Dialogs;
 
 
-use App\Pattens\Creational\FactoryMethod\DialogExample\Buttons\Button;
-use App\Pattens\Creational\FactoryMethod\DialogExample\Buttons\SystemButton;
-use App\Pattens\Creational\FactoryMethod\DialogExample\Buttons\UIButton;
-use App\Pattens\Creational\FactoryMethod\DialogExample\Buttons\WebButton;
+use App\Pattens\Creational\Prototype\Employee\FactoryMethod\DialogExample\Buttons\Button;
+use App\Pattens\Creational\Prototype\Employee\FactoryMethod\DialogExample\Buttons\UIButton;
 
 class UIDialog extends Dialog
 {

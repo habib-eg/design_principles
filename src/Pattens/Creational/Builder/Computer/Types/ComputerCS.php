@@ -1,7 +1,7 @@
 <?php
-namespace App\Pattens\Creational\Builder\Computer\Types;
+namespace App\Pattens\Creational\Prototype\Employee\Builder\Computer\Types;
 
-use App\Pattens\Creational\Builder\Computer\CoolingSystem;
+use App\Pattens\Creational\Prototype\Employee\Builder\Computer\CoolingSystem;
 
 /**
  * Class ComputerCS
