@@ -9,15 +9,15 @@ class Employee
 
     private string $name;
     private int $age;
-    private int $salary;
+    private Salary $salary;
 
     /**
      * Employee constructor.
      * @param string $name
      * @param int $age
-     * @param int $salary
+     * @param Salary $salary
      */
-    public function __construct(string $name, int $age, int $salary)
+    public function __construct(string $name, int $age, Salary $salary)
     {
         $this->name = $name;
         $this->age = $age;
@@ -57,19 +57,21 @@ class Employee
     }
 
     /**
-     * @return int
+     * @return Salary
      */
-    public function getSalary(): int
+    public function getSalary(): Salary
     {
         return $this->salary;
     }
 
     /**
-     * @param int $salary
+     * @param Salary $salary
+     * @return $this
      */
-    public function setSalary(int $salary): void
+    public function setSalary(Salary $salary): Employee
     {
         $this->salary = $salary;
+        return $this;
     }
 
 
